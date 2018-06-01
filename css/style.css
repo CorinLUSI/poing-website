@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i');
 
+/* 14px @ 320px increasing to 16px @ 1366px */
+@media (min-width: 320px) {
+  :root {
+    font-size: calc(0.875rem + ((1vw - 3.2px) * 0.1912));
+    /* Where: * 0.1912 = 100 * font_Size_Difference / viewport_Width_Difference */
+  }
+}
+/* Prevent font scaling beyond this breakpoint */
+@media (min-width: 1366px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
 html {
     /* Adjust font size */
     font-size: 100%;
@@ -90,6 +104,30 @@ h4,
 h5,
 h6 {
     font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h1 {
+    font-size: 2rem;
 }
 
 main {
