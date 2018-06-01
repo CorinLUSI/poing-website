@@ -52,7 +52,9 @@ nav>ul {
     list-style-type: none;
     display: flex;
     padding: 0;
+    margin: 0;
     justify-content: flex-end;
+    align-items: center;
     width: calc(100vw - 60px);
     max-width: 1306px;
 }
@@ -63,35 +65,17 @@ nav li {
 }
 
 .logo {
-    float: left;
+    margin-right: auto;
+    width: 100%;
 }
 
-.hamburger {
-    right: 0;
-    position: fixed;
-    display: none;
+.logo>a {
+    display: inline-block;
 }
 
-@media all and (max-width: 600px) {
-
-    nav>ul {
-        flex-wrap: wrap;
-    }
-
-    .navbar>nav>ul {
-        display: none;
-        text-align: right;
-        top: 5vh;
-        position: fixed;
-        height: 10vh;
-    }
-
-    nav li {
-        flex-basis: 100%;
-    }
-    .hamburger {
-        display: block;
-    }
+.logo img {
+    height: auto;
+    width: 150px;
 }
 
 a {
@@ -110,12 +94,4 @@ h6 {
 
 main {
     height: calc(90vh - 60px);
-}
-
-.is-hidden {
-    display: none !important;
-}
-
-.is-shown {
-    display: block !important;
 }

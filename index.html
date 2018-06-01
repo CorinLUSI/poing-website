@@ -19,13 +19,8 @@
         <header>
             <nav class="navbar">
                 <nav>
-                    <div class="logo"><a href="#intro"><img src="img/poing-logo.png" /></a></div>
-                    <button class="hamburger hamburger--squeeze" type="button">
-                        <span class="hamburger-box">
-    <span class="hamburger-inner"></span>
-                        </span>
-                    </button>
                     <ul>
+                                            <div class="logo"><a href="#intro"><img src="img/poing-logo.png" /></a></div>
                         <li><a href="#bio">bio</a></li>
                         <li><a href="#works">works</a></li>
                         <li><a href="#contact">contact</a></li>
@@ -56,15 +51,6 @@
         </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script>
-    $(function() {
-    	$(window).on('resize',function(){location.reload();});
-        $(".hamburger").click(function() {
-            $(this).toggleClass("is-active");
-            $(this).next().toggleClass("is-hidden is-shown");
-        });
-    });
-    </script>
 </body>
 
 </html>
