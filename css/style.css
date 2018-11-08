@@ -186,7 +186,7 @@ nav li a {
 main {
     height: 100%;
     flex: 1 1 auto;
-    margin-top: 30vh;
+    margin-top: 15vh;
 }
 
 @media (max-width: 767px) {
@@ -277,7 +277,7 @@ section.three-columns {
     column-gap: 30px;
     column-width: 33.333333333%;
     column-span: all;
-    height: 90%;
+    height: 100%;
 }
 
 @media (max-width: 1365px) {
